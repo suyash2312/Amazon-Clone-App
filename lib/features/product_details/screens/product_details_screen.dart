@@ -1,5 +1,6 @@
 import 'package:amazon_clone_app/common/widgets/custom_button.dart';
 import 'package:amazon_clone_app/common/widgets/stars.dart';
+import 'package:amazon_clone_app/features/address/screens/address_screen.dart';
 import 'package:amazon_clone_app/features/product_details/services/product_details_services.dart';
 import 'package:amazon_clone_app/providers/user_provider.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -164,7 +165,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   ),
                   children: [
                     TextSpan(
-                      text: '\$${widget.product.price}',
+                      text: '\₹${widget.product.price}',
                       style: const TextStyle(
                         fontSize: 22,
                         color: Colors.red,
@@ -182,7 +183,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
             Container(color: Colors.black12, height: 5),
             Padding(
               padding: const EdgeInsets.all(10),
-              child: CustomButton(text: 'Buy Now', onTap: () {}),
+              child: CustomButton(
+                text: 'Buy Now',
+                onTap: () {},
+                color: Colors.deepOrange,
+              ),
             ),
             const SizedBox(height: 10),
             Padding(
@@ -190,7 +195,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               child: CustomButton(
                 text: 'Add to Cart',
                 onTap: addToCart,
-                color: const Color.fromRGBO(254, 216, 19, 1),
+                color: const Color.fromARGB(255, 255, 225, 30),
               ),
             ),
             const SizedBox(height: 10),

@@ -162,7 +162,6 @@ class _AddressScreenState extends State<AddressScreen> {
                 ),
               ),
 
-              // Apple Pay Button wrapped in FutureBuilder
               FutureBuilder<PaymentConfiguration>(
                 future: PaymentConfiguration.fromAsset('applepay.json'),
                 builder: (context, snapshot) {
@@ -188,7 +187,6 @@ class _AddressScreenState extends State<AddressScreen> {
               ),
               const SizedBox(height: 10),
 
-              // Google Pay Button wrapped in FutureBuilder
               FutureBuilder<PaymentConfiguration>(
                 future: PaymentConfiguration.fromAsset('gpay.json'),
                 builder: (context, snapshot) {

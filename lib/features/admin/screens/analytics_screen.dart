@@ -38,7 +38,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
             child: Column(
               children: [
                 Text(
-                  '\$$totalSales',
+                  '\₹$totalSales',
                   style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,

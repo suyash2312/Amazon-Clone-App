@@ -139,7 +139,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
                       'Order Date:      ${DateFormat().format(DateTime.fromMillisecondsSinceEpoch(widget.order.orderedAt))}',
                     ),
                     Text('Order ID:          ${widget.order.id}'),
-                    Text('Order Total:      \$${widget.order.totalPrice}'),
+                    Text('Order Total:      \₹${widget.order.totalPrice}'),
                   ],
                 ),
               ),

@@ -5,7 +5,6 @@ import 'package:amazon_clone_app/common/widgets/custom_textfield.dart';
 import 'package:amazon_clone_app/constants/global_variables.dart';
 import 'package:amazon_clone_app/constants/utils.dart';
 import 'package:amazon_clone_app/features/admin/services/admin_services.dart';
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';

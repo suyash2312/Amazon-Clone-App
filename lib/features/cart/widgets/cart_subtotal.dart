@@ -19,7 +19,7 @@ class CartSubtotal extends StatelessWidget {
         children: [
           const Text('Subtotal ', style: TextStyle(fontSize: 20)),
           Text(
-            '\$$sum',
+            '\₹$sum',
             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
         ],

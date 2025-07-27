@@ -21,7 +21,6 @@ class CategoryProductsChart extends StatelessWidget {
             maxY: getMaxY(),
             minY: 0,
 
-            // ✅ Tooltips
             barTouchData: BarTouchData(
               enabled: true,
               touchTooltipData: BarTouchTooltipData(
@@ -40,13 +39,12 @@ class CategoryProductsChart extends StatelessWidget {
               ),
             ),
 
-            // ✅ Axis titles
             titlesData: FlTitlesData(
               leftTitles: AxisTitles(
                 sideTitles: SideTitles(
                   showTitles: true,
                   reservedSize: 40,
-                  interval: getStepSize(), // <- exact same as grid line spacing
+                  interval: getStepSize(),
                   getTitlesWidget: (value, meta) {
                     return SideTitleWidget(
                       axisSide: meta.axisSide,
@@ -73,7 +71,6 @@ class CategoryProductsChart extends StatelessWidget {
               ),
             ),
 
-            // ✅ Grid
             gridData: FlGridData(
               show: true,
               drawVerticalLine: true,
@@ -85,7 +82,6 @@ class CategoryProductsChart extends StatelessWidget {
                   FlLine(color: Colors.grey.shade300, strokeWidth: 0.7),
             ),
 
-            // ✅ Border
             borderData: FlBorderData(
               show: true,
               border: const Border(
@@ -94,7 +90,6 @@ class CategoryProductsChart extends StatelessWidget {
               ),
             ),
 
-            // ✅ Bars
             barGroups: salesData.asMap().entries.map((entry) {
               final index = entry.key;
               final data = entry.value;
@@ -130,14 +125,12 @@ class CategoryProductsChart extends StatelessWidget {
     );
   }
 
-  /// Calculate dynamic maxY for chart
   double getMaxY() {
     if (salesData.isEmpty) return 10;
     final max = salesData.map((e) => e.earning).reduce((a, b) => a > b ? a : b);
     return (max * 1.2).ceilToDouble(); // add 20% padding
   }
 
-  /// Clean step size for Y axis & grid lines
   double getStepSize() {
     final maxY = getMaxY();
     if (maxY <= 500) return 100;
@@ -150,7 +143,6 @@ class CategoryProductsChart extends StatelessWidget {
     return 20000;
   }
 
-  /// Bottom axis labels (e.g. Mobiles, Books)
   Widget getBottomTitles(double value, TitleMeta meta) {
     final index = value.toInt();
     if (index >= 0 && index < salesData.length) {

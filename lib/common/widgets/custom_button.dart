@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 import 'package:amazon_clone_app/constants/global_variables.dart';
@@ -21,7 +20,7 @@ class CustomButton extends StatelessWidget {
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(double.infinity, 50),
-        backgroundColor: GlobalVariables.secondaryColor,
+        backgroundColor: color ?? GlobalVariables.secondaryColor,
       ),
       child: Text(
         text,

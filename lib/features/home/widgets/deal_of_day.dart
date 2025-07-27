@@ -61,13 +61,13 @@ class _DealOfDayState extends State<DealOfDay> {
                 Container(
                   padding: const EdgeInsets.only(left: 15),
                   alignment: Alignment.topLeft,
-                  child: const Text('\$100', style: TextStyle(fontSize: 18)),
+                  child: const Text('\₹90000', style: TextStyle(fontSize: 18)),
                 ),
                 Container(
                   alignment: Alignment.topLeft,
                   padding: const EdgeInsets.only(left: 15, top: 5, right: 40),
                   child: const Text(
-                    'Rivaan',
+                    'Samsung S24 Ultra',
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
