@@ -47,3 +47,20 @@ This project helped me learn **mobile app development**, **API integration**, **
 
 ## 📁 Project Structure
 
+amazon-clone-app/
+├── backend/
+│ ├── routes/
+│ ├── models/
+│ ├── middleware/
+│ └── server.js
+├── lib/
+│ └── Flutter source files
+
+
+## 📸 Screenshots
+
+
+## 🙌 Acknowledgements
+Thanks to my mentor for sharing key resources and guidance throughout the project.
+
+
