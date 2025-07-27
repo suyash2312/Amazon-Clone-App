@@ -1,71 +1,49 @@
-🛒 Amazon Clone App
-A full-stack Amazon Clone App built using Flutter for the frontend and Node.js + Express for the backend, with MongoDB as the database. This project was developed as a hands-on learning experience in building scalable and responsive e-commerce applications. It replicates core Amazon features like product browsing, authentication, cart management, order tracking, and admin functionality.
+# 🛒 Amazon Clone App
 
-🚀 Features
-🧑‍💼 User Side:
-User registration and login with secure JWT-based authentication
+A **full-stack Amazon Clone App** built using **Flutter** for the frontend and **Node.js + Express** for the backend, with **MongoDB** as the database. This project replicates the core features of Amazon, including authentication, product browsing, cart management, admin controls, and payments. 
 
-Product listings with dynamic search
+This project helped me learn **mobile app development**, **API integration**, **backend services**, and **database operations** — all in one place. It was developed under the guidance of a mentor who provided the key learning resources.
 
-Add to cart and place orders
+---
 
-View past orders
+## 🔧 Features
 
-Payment gateway integration (Google Pay mock environment)
+### 👤 User Side
+- 🔐 Login & Signup using JWT authentication  
+- 🛍 Product browsing with image, price, and rating  
+- 🛒 Add to Cart, Place Order, and View Order History  
+- 💳 Payment gateway (Google Pay test environment)
 
-🛠 Admin Panel:
-Add, update, and delete products
+### 🛠 Admin Panel
+- ➕ Add new products  
+- 🗑 Delete & update product listings  
+- 📈 View total earnings  
+- 🚚 Update delivery status for orders  
 
-View all orders
+---
 
-Analyze total earnings
+## 🧱 Tech Stack
 
-Change order status
+| Layer        | Technology            |
+|--------------|------------------------|
+| **Frontend** | Flutter                |
+| **Backend**  | Node.js + Express.js   |
+| **Database** | MongoDB (via Mongoose) |
+| **Auth**     | JWT                    |
+| **Payments** | Google Pay (Test)      |
 
-🧱 Tech Stack
-Layer	Technology
-Frontend	Flutter
-Backend	Node.js, Express.js
-Database	MongoDB (Mongoose)
-Authentication	JWT
-Payments	Google Pay API (test mode)
+---
 
-📚 Learning Highlights
-During this project, I gained hands-on experience with:
+## 💡 What I Learned
 
-Flutter UI development and state management
+- Building responsive UIs using **Flutter**
+- Creating and consuming **REST APIs**
+- Implementing **JWT-based authentication**
+- Managing data with **MongoDB**
+- Integrating **Flutter frontend with Node.js backend**
+- Handling **state management, validation, and navigation** in Flutter
 
-RESTful API integration
+---
 
-Backend API design with Express.js
+## 📁 Project Structure
 
-MongoDB data modeling and querying
-
-Secure authentication flows
-
-Real-time data updates and error handling
-
-Deployment and Git version control
-
-Resources and guidance provided by my mentor were instrumental throughout this journey.
-
-📂 Folder Structure
-bash
-Copy
-Edit
-amazon-clone-app/
-├── backend/
-│   └── server.js, routes/, models/, middleware/
-├── lib/
-│   └── Flutter source files
-📸 Screenshots
-(Include app screenshots here if possible)
-
-🧪 How to Run
-Clone the repo
-
-Set up your .env file for backend
-
-Run the backend using npm start
-
-Run the Flutter app on a device/emulator using flutter run
