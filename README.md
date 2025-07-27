@@ -1,4 +1,4 @@
-# amazon_clone_app
+# Amazon Clone App
 
 A new Flutter project.
 
